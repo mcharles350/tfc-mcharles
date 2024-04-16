@@ -24,4 +24,5 @@ resource "tfe_variable" "aws_secret_key" {
   category        = "env"
   description     = "AWS Secret Key"
   variable_set_id = tfe_variable_set.aws_credentials.id
+  sensitive       = true
 }
