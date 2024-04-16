@@ -1,6 +1,7 @@
 variable "token" {
   type        = string
   description = "Token for Terraform Cloud API access"
+  sensitive   = true
 }
 
 variable "aws_access_key" {
